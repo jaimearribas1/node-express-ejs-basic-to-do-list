@@ -60,8 +60,10 @@ The '-' in the tags (<%- -%>) trims the newline characters from the output, keep
   </form>
 
   <!-- Display the user's name without sanitizing the input -->
+  <!-- use Hello, <%= userName %>! to sanitize-->
+
   <div>
-    Hello, <%= userName %>!
+    Hello, <%- userName %>!
   </div>
 
   <%- include("footer") -%>
